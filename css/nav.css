@@ -1,0 +1,157 @@
+/* top sticky nav */
+
+.logo{
+    float: left;
+}
+.nav-block{
+    max-width: 370px;
+    width: 70%;
+    float: right;
+    display: block;
+}
+
+/* nav block text color */
+.nav-block a{
+    font-family: "nyt-franklin", helvetica,arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 4% 0 0;
+    display: inline-block;
+    position: relative;
+}
+.nav_bar.nav-block a:first{
+    text-decoration: underline;
+}
+
+/* subscription nav */
+.nav_subscribe{
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000 !important;
+    font-weight: bold !important;
+}
+/* subscription nav for fixed nav */
+.fixednav_subscription{   
+    background:#2574a9;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+/* nav bar */
+nav.nav_bar{
+    width: 100%;
+    height: auto;
+    /* padding: 40px; */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1000;
+    top: 0px;
+    left: 0;
+}
+
+nav.nav_bar.nav_fixed {
+    background: rgba(249, 249, 249, 0.95);
+    padding:20px 50px;
+    position: fixed;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    /* top: -500px; */
+    transition: all ease 1s;
+}
+
+nav.nav_bar.nav_fixed.slide_down{
+    top: 0;
+}
+.nav_color a{
+    color:#000;
+}
+.wyget{
+    text-decoration: none !important;
+}
+
+/* mobile nav */
+.mobile_nav{
+    width: 80%;
+    float: right;
+    position: relative;
+    display: none;
+}
+
+/* mobile h5 */
+.mobile-h5{
+    font-family: "nyt-franklin", helvetica,arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    width: auto;
+    margin: 5px 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* mobile subscription */
+.mobile-subscription{
+    float: right;
+}
+.mobile_nav h5 i {
+    display: inline-block;
+}
+
+.link_what{
+    text-decoration: none;
+}
+
+/* media queries for mobile and tablet */
+@media(max-width:767px){
+    /* mobile nav */
+    .mobile_nav{
+        display:block;
+    }
+    .nav-block{
+        display: none;
+    }
+    .mobile_subscription{
+        float: right;
+        text-decoration: none;
+        background: #fff;
+        padding: 5px 10px;
+        border-radius: 3px;
+        color: #000;
+    }
+    .blue{
+        float: right;
+        text-decoration: none;
+        background:#4d7b9f;
+        padding: 5px 10px;
+        border-radius: 3px;
+        color: #fff;
+    }
+    
+    menu{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    .mobile_nav h5 i svg path, .mobile_nav h5 i svg, #icon-caret-svg g {
+        fill: #fff;
+    }
+    nav.nav_bar .mobile_nav h5.black {
+        color: #000;
+        fill: #000;
+    }
+    nav.nav_bar {
+        /*padding: 13px 10px 13px 15px;*/
+        transition: ease all 1s;
+    }
+    nav.nav_bar.opened {
+        background:rgba(255, 255, 255, 0.8);
+        fill: #000;
+    }
+}

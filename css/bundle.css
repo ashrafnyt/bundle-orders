@@ -1,0 +1,358 @@
+/* nytimes bundle stylesheet */
+/* by- ashraful kabir */
+/* ############# Date: 05/08/2017 ################*/
+body{
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    padding:0;
+    font-family: "nyt-franklin-Light","Helvetica Neue",Arial,sans-serif;;
+}
+
+html {
+    height: 100%
+}
+/* generic header,span,div font style */
+h1,h2,h3,h4,h5,h6,span,p,div{
+    font-family: "nyt-franklin-Light","Helvetica Neue",Arial,sans-serif;
+}
+
+section {
+   position: relative;
+   padding: 30px;
+   font-family: "nyt-cheltenham";
+}
+/* End of generic section */
+
+img {
+    border: none;
+    outline: none;
+    vertical-align: bottom;
+}
+/* End generic images */
+
+h1{
+    color:#000;
+    text-align:center;
+}
+/* End generic h1*/
+
+p{
+    font-size:14px;
+    text-align: center;
+}
+/* End of generic paragraph */
+
+.clearfix{clear: both;}
+/* End of clearing float */
+
+.selected{color: red;background: green;} 
+
+/* bundle container */
+.bundle-container{
+    width:90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display:table;
+}
+
+#bundle-selected{
+    background: #f1f1f1;
+}
+
+
+.container{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display:table;
+}
+/* End of generic section container */
+
+.bundle img{
+    max-width: 90%;
+    overflow: hidden;
+    margin-bottom: 0;
+   
+}
+/* End of bundle images */
+
+/* bundle header 2 */
+.bundle h2{
+    color: #fff;
+}
+
+/* generic bundle image div */
+.bundle-img{
+    width: 100%;    
+}
+
+/* generic bundle div */
+.bundle{
+    width: 31%;
+    height: auto;
+    float: left;
+    margin-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* first bundle */
+div.bundle:first-child{
+    margin-left:1% !important;
+}
+
+/* last bundle */
+div.bundle:last-child{
+    margin-right: 0;
+}
+
+/* bundle hover */
+.bundle:hover{
+    cursor: pointer;
+}
+
+.sub-heading{
+    font-weight: normal;
+    color: #fff;
+    height: 40px;
+}
+.sub-heading:last{
+    height: 30px;
+}
+
+/* Bundle 1 */
+.bundle-1{   
+    background:#79B3C2;    
+}
+
+.bundle-1:hover{
+    background:#4c808e;
+    color: #fff;
+}
+
+/* Bundle 2 */
+.bundle-2{
+    background:#00BFF3;    
+    
+}
+.bundle-2:hover{
+    background:#1bacd4; 
+    color: #fff;
+}
+
+/* Bundle 3 */
+.bundle-3{   
+    background:#028BB0;
+}
+.bundle-3:hover{
+    background:#035a71;
+    color: #fff;
+}
+
+/* Price */
+.price{
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;    
+    font-weight: normal;
+}
+
+/* Bundle select message */
+#bundle-selected{
+    display: none;
+}
+/* Other Options */
+#otherOptions{
+    display: none;
+}
+
+/* Step 2 */
+#step-2{   
+    background: #ccc;
+    padding-top: 1%;
+    text-align: center;
+}
+/* form input fields */
+#step-2 input{
+    width: 200px;
+    height:30px;
+    padding: 5px;
+    border: 0;
+}
+/* purchase message h2*/
+.purchase-message h2{
+    font-size: 16px;
+    text-align: center;
+}
+
+/* purchase form username submit */
+#step-2 button.submit{
+    padding: 5px;
+    width:100px;
+    height:40px;
+}
+
+#form-text{
+    margin: 15px 0;
+    font-weight: bold;
+    
+}
+.error{color: red;}
+.success{color:green;}
+.tricircle{text-align: center;}
+
+/* ########## Step 3 ############ */
+
+#step-3{
+    background:#f1f1f1;
+    padding-top: 1%;
+    display: none;
+}
+/* End of step-3 */
+
+.fourTriangles{
+    width: 55%;
+    margin: 0 auto;
+}
+/* End of four triangles */
+
+.fourCircles{
+    width: 50%;
+    margin: 0 auto;
+}
+/* End of four Circle */
+
+.signature{
+    width: 100%;
+    text-align: center;
+    margin:20px;
+}
+/* End of signature block */
+
+.triangles{
+    width: 0;
+    height: 0;
+    border: 100px solid #8080da;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+    float: left;
+    margin-right: 25px;   
+}
+/* End of generic triangles */
+
+.triactive{    
+    width: 0;
+    height: 0;
+    border: 100px solid #1414b5;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+    float: left;
+    margin-right:30px;
+}
+/* End of triangles active */
+
+.triactive::after{  
+    color: red;
+    content: '.';
+    border-radius: 5px;
+    margin-left: 55px;
+    margin-top: 69px;
+    position: absolute;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+/* End of triangles after */
+
+
+div.triangles:last-child::after{    
+    color:transparent;
+    content: '.';    
+}
+/* End of triangle last child after */
+
+.circles{
+   width: 100px;
+    height: 100px;
+    background: #80c580;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px; 
+}
+/* End of generic circles */
+
+.ciractive{
+    width: 100px;
+    height: 100px;
+    background: #225f22;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;   
+}
+/* End of active circle */
+
+span{font-weight: bold;}
+
+#step-4{
+    background: #ccc; */
+    padding-top: 1%;
+    display: none;
+}
+/* End of Step-4 for submit variables to sender */
+
+#step-4 sender{
+    text-align: center;
+    border: 1px solid #759a75;
+    border-radius: 5px;
+    padding: 15px 10px;
+    width: 150px;
+    margin: 0 auto;
+    transition: all ease 1s;
+    background: #80c580;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    display: block;
+}
+/* End of sender button*/
+
+#step-4 sender:hover{ 
+     background:#225f22; 
+}
+
+#discountBar{
+    max-width: 340px;
+    margin: 0 auto;
+}
+/* End of discount bar */
+.discountProgress {
+    height: 30px;
+    width: 100%;
+    background:#fff;
+    border:1px solid #55b75e;
+    position: relative;
+    display: none;
+}
+/* End of discount progress */
+.discountProgressBar {
+    width:0px;
+    height: 30px;
+    color:#fff;
+    background:#55b75e;
+    text-align: center;
+}
+/* End of discount progress bar */
+
+#footer{
+    background: #999;
+    color: #fff;
+}
+/* End of footer */

@@ -1,0 +1,66 @@
+<ul>
+    <li id="one">
+        <i>j</i>
+        <a href="#" class="open">Box One</a>
+        <div class="box"></div>        
+    </li>
+    <li id="two">
+        <i>i</i>
+        <a href="#" class="open">Box Two</a>
+        <div class="box"></div>
+    </li>
+</ul>
+
+<style type="text/css">
+    .box{
+        width:300px;
+        height:300px;
+        position:relative;
+        display:none;
+        padding: 0px;
+       
+    }
+    #one .box{
+        background:#ccc;
+    }
+    #two .box{
+        background:#ddd;
+    }
+    ul li{
+       display:inline;
+       padding-right:10px;
+       list-style:none;    
+    }
+
+</style>
+
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-1.9.0.min.js"
+  integrity="sha256-f6DVw/U4x2+HjgEqw5BZf67Kq/5vudRZuRkljnbF344="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    var open = $('.open'),
+    a = $('ul li').find('i');
+
+    console.log(a.hasClass('active'));
+
+    open.click(function(e){
+        e.preventDefault();
+        var $this = $(this),
+            speed = 500;
+        if($this.hasClass('active') === true) {
+            $this.removeClass('active').next('.box').slideUp(speed);
+        } 
+        else if(a.hasClass('active') === false)
+        {
+            $this.addClass('active').next('.box').slideDown(speed);
+        } 
+        else {
+            a.removeClass('active').next('.box').slideUp(speed);
+            $this.addClass('active').next('.box').delay(speed).slideDown(speed);
+        }
+    });
+
+</script>

@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>::NYT:: Bundle</title>
+    <meta name="description" content="NY Times"> 
+    
+    <!-- general custom stylesheet -->
+    <link rel="stylesheet" href="css/bundle.css">
+    <!-- media queries -->
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!-- nav stylesheet -->
+    <link rel="stylesheet" href="css/nav.css">
+    
+</head>
+<body>        
+    <!-- Bundle section -->
+    <section id="bundle">
+            <div class="welcome">
+                <h1>Welcome to Bundle</h1>
+                <p>Please Select any Bundle.</p>
+            
+            </div>
+        <!-- End of welcome block -->
+        
+        <div class="bundle-container">
+            <!-- Bundle 1 -->
+            <div class="bundle-1 bundle forSale" id="bundle-1" data-nickname="Basic">
+                <h2></h2>                
+                <div class="bundle-img">
+                    <img src="img/basic.png">
+                </div>
+                <!-- End of Bundle Image -->
+                <div class="price">
+                    Only $<span class="regularPrice">10.55</span>
+                    
+                </div>
+                
+            </div>
+            <!-- End of bundle 1 -->            
+          
+            <div class="bundle-2 bundle forSale" id="bundle-2" data-nickname="All Access">
+                <h2></h2>                
+                <div class="bundle-img">
+                    <img src="img/all-access.png">
+                </div>
+                <!-- End of Bundle Image -->
+                <div class="price">
+                    Only $<span class="regularPrice">14.75</span>
+                   
+                </div>
+            </div>
+            <!-- End of bundle 2 -->            
+            
+            <div class="bundle-3 bundle" id="bundle-3" data-nickname="Home Delivary">
+                <h2></h2>
+                <div class="sub-heading">+All Access</div>                
+                <div class="bundle-img">
+                    <img src="img/home-delivery.png">
+                    <div class="price">
+                    Only $<span class="regularPrice">21.40</span>                 
+                    </div>
+                </div>
+                <!-- End of Bundle Image -->
+            </div>
+            <!-- End of bundle 3 -->
+
+            <div class="clearfix"></div>
+        </div>
+        <!-- End of bundle container -->
+    </section>
+    <!-- End of bundle blocks -->
+    
+        
+    <!-- Selected Bundle  -->
+    <section id="bundle-selected">
+        <!-- Bundle Selection Message -->
+        <div class="container welcome">
+                <h1>Bundle Selection</h1>           
+            <p>You have selected the Bundle :
+                <span id="selectedBundle"></span>
+            </p>
+            <!-- Purchase message -->       
+            <span class="purchase-message"></span>        
+            <!-- End of purchase message -->
+            
+        </div>
+        <!-- End of Bundle Selection Message -->
+        
+        
+    </section>
+    <!-- End of selected bundle section -->
+    
+<!-- other options -->
+    <div id="otherOptions">           
+        <!-- Purchase form -->
+        <section id="step-2">
+            <!-- step 2 purchase form container -->
+            <div class="container">
+                
+                 <!-- form start -->           
+                <div class="subform">
+                    <input id="username" type="text" name="username" placeholder="Please Enter Username">
+                    <button class="submit">Submit</button>
+                </div>            
+                <!-- End of purchase form -->
+
+                <!--form submission message -->
+                <div id="form-text">
+
+                </div>
+                <!-- End of submission message -->
+            </div>
+            <!-- End of purchase form container -->      
+
+
+        </section>
+        <!-- End of purchase form section -->
+    
+    
+        <!-- Step 3 section -->
+        <section id="step-3">
+                <!-- Signature Header -->    
+                <div class="welcome">
+                    <h1>Signature</h1>
+                    <p>Select a combinaiton of triangles and circles.</p>
+                </div>
+                <!-- End of signature header-->
+
+            <!-- triangle container -->
+            <div class="container">
+                <div class="fourTriangles">
+                    <div class="triangles"></div>
+                    <div class="triangles"></div>
+                    <div class="triangles"></div>
+                    <div class="triangles"></div>                    
+                </div>
+                <!-- End of four triangles -->
+            </div>
+                <!-- End of triangle container -->
+            
+            <div class="tricircle">        
+              You Have Selected:  <span id="triangleQuantity"></span> Triangles And <span id="circleQuantity"></span> Circles.
+            </div>
+            <!-- End of message -->
+           
+            <div class="container">
+                <div class="fourCircles" >
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>             
+                </div>
+                <!-- End of four circles -->
+            </div>
+            <!-- End of circle container -->
+
+        </section>
+        <!-- End of Step 3 section -->    
+        
+        <section id="step-4">
+            <div class="container">  
+                <h1 class="showAllVariables"></h1>
+                  
+                  <p class="username"></p>
+                  <p class="bundleSelected"></p>
+                  <p class="price"></p>
+                  <p class="finalPrice"></p>
+                  <p class="triangleQuantity"></p>
+                  <p class="circleQuantity"></p>
+                  <p class="totalShape"></p>
+                  <p class="offerMessage"></p>
+                <!-- End of Show variables ---->
+                
+                <div id="discountBar">
+                    <div class="discountProgress">     
+                        <div class="discountProgressBar" role="progressbar"></div> 
+                         <p> You Saved <span class="ShowPercent"></span>                   Today. Your Savings Value is: $
+                             <span class="savingsValue"></span> 
+                        </p>
+                    </div>
+                </div>
+                <!-- End of discount progress bar -->                
+                <br><br>                
+                <sender>
+                    Send The Data
+                </sender>
+                <!-- End of sender button -->                
+                
+                <div class="dataSendSuccess"></div>
+                <!-- End of Display data sent,success message -->                
+            </div>
+
+        </section>
+        <!-- End of step 4 -->
+    
+ </div>
+<!-- End of other options -->
+    
+    <!-- Footer -->
+    <section id="footer">
+        <div class="welcome">
+            <p id="copy">&copy;copyright nytimes.com,2017.</p>
+            
+        </div>
+    </section>
+    <!-- End of footer -->
+</body> 
+<!-- End of Body --> 
+    
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-1.9.0.min.js"
+  integrity="sha256-f6DVw/U4x2+HjgEqw5BZf67Kq/5vudRZuRkljnbF344="
+  crossorigin="anonymous"></script>
+    
+    <!-- custom js-->
+    <script type="text/javascript" src="js/custom.js"></script>
+    
+</html>

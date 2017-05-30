@@ -1,0 +1,52 @@
+/* Responsive design */
+@media only screen and (max-width: 767px) {
+    
+    /* container */
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    /* generic bundle blocks */
+    .bundle{
+          width: 100%;
+          float: none;
+      }
+    
+    div.bundle:first-child {
+        margin-left: 0% !important;
+    }
+    
+    /* generic bundle h2 */
+    .bundle h2{
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    /* Bundle block image */
+    .bundle-img{
+        width: 280px;
+    margin: 0 auto;
+    }
+    
+    /* submit button */        
+    .submit{
+        width: 80px;
+        height: 42px;
+        background: #999;
+        color: #fff;
+        font-size: 14px;
+        border: 0;
+    }
+    
+    /* form input field */
+    input{
+          font-size: 14px;
+      }    
+        
+}
+
+@media (max-height: 500px) and (min-width: 768px)
+section#intro {
+    min-height: 500px;
+}
